@@ -24,15 +24,15 @@ Vue.use(Router)
 // })
 
 export const constantRoutes = [
-  // {
-  //   path: '/redirect',
-  //   component: () => import('@/views/activity/index'),
-  //   hidden: true,
-  //   children: [{
-  //     path: '/redirect/:path*',
-  //     component: () => import('@/views/redirect/index')
-  //   }]
-  // },
+  {
+    path: '/redirect',
+    component: () => import('@/views/home/index'),
+    hidden: true,
+    children: [{
+      path: '/redirect/:path*',
+      component: () => import('@/views/home/index')
+    }]
+  },
 
   {
     path: '/',

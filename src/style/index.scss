@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body,
+#app {
+  width: 100%;
+  font-size: 16px;
+  // overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+#app{
+  min-height: 100%;
+}
+
+.app-container{
+  height: 100vh;
+  overflow-y: auto;
+  background:#FFF;
+}
+
+a {
+  text-decoration:none;
+  outline: none;
+}
+// 活动详情
+#detail{
+  height: auto;
+  overflow: hidden;
+  // *{
+      // display:inline 导致元素间隙 修复
+      // word-spacing: -6px;
+  // }
+
+  iframe{
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  ol{
+      list-style: inside decimal;
+      color: #666;
+  }
+  
+  ul{
+      list-style: inside ;
+      color: #666;
+  }
+}
+/*320px 360px 375px 420px 768px 1024px*/
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 440px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (min-width: 441px) and (max-width: 490px) {
+  html {
+    font-size: 19.66px !important;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 530px) {
+  html {
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (min-width: 531px) and (max-width: 580px) {
+  html {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (min-width: 581px) and (max-width: 750px) {
+  html {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (min-width: 741px) {
+  html,
+  body,
+  #app {
+    max-width: 414px;
+    height: 736px;
+    margin: auto;
+  }
+}
+

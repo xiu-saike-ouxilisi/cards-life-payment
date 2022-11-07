@@ -21,8 +21,15 @@ import wx from 'weixin-js-sdk'
 Vue.prototype.wx = wx
 
 
+// new Vue({
+//   router,
+//   store,
+//   render: h => h(App)
+// }).$mount('#app')
+
 new Vue({
+  el: '#app',
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+})
